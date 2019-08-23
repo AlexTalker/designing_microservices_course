@@ -1,4 +1,4 @@
-package com.microservices.accounting.dto;
+package com.microservices.accountingservice.api.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

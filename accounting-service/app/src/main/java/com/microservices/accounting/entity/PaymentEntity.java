@@ -1,7 +1,7 @@
 package com.microservices.accounting.entity;
 
-import com.microservices.accounting.dto.InvokePaymentDto;
 import com.microservices.accounting.dto.PaymentStatus;
+import com.microservices.accountingservice.api.dto.InvokePaymentDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
