@@ -1,7 +1,8 @@
 package com.microservices.accounting.entity;
 
-import com.microservices.accounting.dto.PaymentStatus;
 import com.microservices.accountingservice.api.dto.InvokePaymentDto;
+import com.microservices.accountingservice.api.dto.PaymentDetailsDto;
+import com.microservices.accountingservice.api.dto.PaymentStatus;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -41,5 +42,9 @@ public class PaymentEntity {
         this.amount = invokePaymentDto.getAmountOfMoney();
         this.username = invokePaymentDto.getUser().getLogin();
         this.paymentStatus = Objects.requireNonNull(status);
+    }
+
+    public PaymentDetailsDto toDto() {
+        return new PaymentDetailsDto(paymentId, username, amount, paymentStatus);
     }
 }

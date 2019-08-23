@@ -1,7 +1,7 @@
 package com.microservices.accounting.service;
 
-import com.microservices.accounting.dto.PaymentDetailsDto;
 import com.microservices.accountingservice.api.dto.InvokePaymentDto;
+import com.microservices.accountingservice.api.dto.PaymentDetailsDto;
 
 public interface PaymentService {
 
